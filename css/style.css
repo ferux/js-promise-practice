@@ -1,0 +1,95 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.full {
+    height: 100%;
+    width: 900px;
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+span.err {
+    color: red;
+    font-weight: bold;
+}
+
+span.suc {
+    color: green;
+    font-weight: bold;
+}
+
+span.pen {
+    color: darkgoldenrod;
+    font-weight: bold;
+}
+
+div.cols2 {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+#log {
+    background-color: rgba(127, 255, 212, 0.3);
+    width: 50%;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    overflow: auto;
+}
+
+#meter {
+    background-color: rgba(255, 127, 80, 0.3);
+    width: 50%;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#meter-num {
+    background-color: #fff;
+    width: 20%;
+    height: 0%;
+}
+
+.small-space {
+    font-size: 0;
+}
+
+.trow>td {
+    width: 25%;
+}
+
+li {
+    display: flex;
+}
+
+.table-main {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+@media screen and (max-width:900px) {
+    .full {
+        width: 100%;
+    }
+}
